@@ -133,6 +133,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
+  text-align: center;
 }
 .team-card-list {
   background-color: var(--white);
