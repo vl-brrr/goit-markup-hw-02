@@ -135,7 +135,7 @@ body {
   color: var(--navy-blue);
   text-align: center;
 }
-.team-card-list {
+.team-card {
   background-color: var(--white);
 }
 .section-three-list-header {
