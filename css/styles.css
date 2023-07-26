@@ -21,9 +21,8 @@ body {
   background-color: var(--white);
   line-height: 1.5;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 ul,
 ol {
@@ -37,37 +36,33 @@ h1 {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 56px;
-  font-style: normal;
   line-height: 1.07143;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em;
 }
 h2 {
   font-family: var(--main-font);
   color: var(--navy-blue);
   font-size: 36px;
-  font-style: normal;
   font-weight: 700;
   line-height: 1.111;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
 }
 h3 {
   font-family: var(--main-font);
   color: var(--navy-blue);
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
 }
 .logo {
   font-family: var(--logo);
   color: var(--navy-blue);
   font-size: 18px;
-  font-style: normal;
   font-weight: 800;
   line-height: 1.166;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .logo-part1 {
@@ -80,7 +75,7 @@ h3 {
   color: var(--navy-blue);
 }
 .navigation .link:hover,
-.navigation .link:active,
+.navigation .link:focus,
 .contacts-links:hover,
 .contacts-links:focus {
   color: var(--ocean);
@@ -90,7 +85,6 @@ h3 {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: 0.32px;
 }
 .contacts-links {
   color: var(--slate);
@@ -105,13 +99,13 @@ h3 {
 .hero-page-button {
   color: var(--white);
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
-  letter-spacing: 4%;
+  letter-spacing: 0.04em;
   background-color: var(--iris);
+  font-family: inherit;
 }
 .hero-page-button:hover,
-.hero-page-button:active {
+.hero-page-button:focus {
   background-color: var(--ocean);
 }
 
@@ -143,17 +137,21 @@ h3 {
   background: var(--cloud);
   color: var(--iris);
   text-align: center;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   font-weight: 500;
   cursor: pointer;
 }
-.filter-button > li > button:active,
+.filter-button > li > button:focus,
 .filter-button > li > button:hover {
   color: var(--white);
   background-color: var(--ocean);
 }
 
 .project-card > li {
-  border: 1px solid var(--cornflower);
-  background: var(--white);
+  background-color: var(--white);
+}
+.project-card > li > a > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
 }
